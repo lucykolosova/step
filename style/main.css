@@ -909,6 +909,7 @@ table {
   z-index: 1;
   width: 394px;
   height: 724px;
+  margin: auto;
   background-size: cover;
   transform: rotateY(3deg) rotateX(-2deg) rotateZ(-2deg) skewX(4deg) skewY(2deg);
   transform-origin: center;
@@ -1043,39 +1044,18 @@ table {
 }
 .child-section__item-img {
   height: 231px;
-  background-image: url("../image/school-reflect.png");
-  background-size: cover;
-  margin: 53px 38px 42px;
+  background-color: transparent;
   position: relative;
   transition: 0.6s;
   will-change: transform;
   transform: rotateY(-28deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
   box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
+  width: 80%;
+  margin: 53px 30px 42px;
 }
 .child-section__item-img--revers {
   transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
   box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
-}
-.child-section__item-img::before, .child-section__item-img::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  z-index: 1;
-}
-.child-section__item-img::before {
-  border-width: 0 0 20px 20px;
-  border-color: transparent transparent #fff transparent;
-  bottom: 0;
-  right: 0;
-}
-.child-section__item-img::after {
-  border-width: 20px 20px 0 0;
-  border-color: #fff transparent transparent transparent;
-  top: 0;
-  left: 0;
 }
 .child-section__description {
   color: #252525;
@@ -1175,7 +1155,7 @@ table {
 }
 .subscribe__networks-link {
   transform: rotateX(-24deg);
-  padding: 11px 18px 14px 19px;
+  padding: 10px 14px 15px 15px;
   color: #fff;
   background-color: #27c5dc;
   box-shadow: 0 12px 21px rgba(46, 228, 255, 0.4);
@@ -1184,7 +1164,11 @@ table {
   height: 40px;
   transform-origin: center;
   transition: 0.3s;
-  margin-right: 10px;
+  margin-left: 10px;
+}
+.subscribe__networks-link--padding {
+  padding: 11px 18px 14px 19px;
+  margin-left: 0;
 }
 .subscribe__networks-link:hover {
   color: #fff;
