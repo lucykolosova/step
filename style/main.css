@@ -1,0 +1,1232 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, html {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, html {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+@font-face {
+  font-family: "SFUI Display";
+  src: local("☺︎"), local("SFUI Display"), url("../fonts/SFUIDisplay-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SFUI Display Semibold";
+  font-weight: 400;
+  src: local("☺︎"), local("SFUI Display Semibold"), url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SFUI Display Heavy";
+  font-weight: 400;
+  src: local("☺︎"), local("SFUI Display Heavy"), url("../fonts/SFUIDisplay-Heavy.woff") format("woff");
+}
+.bground {
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer, .subscribe, .child-section, .benefits, .banner__subtitle, .banner__text {
+  max-width: 1130px;
+  margin: auto;
+}
+@media (max-width: 1199px) {
+  .footer, .subscribe, .child-section, .benefits, .banner__subtitle, .banner__text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 26px;
+  z-index: 3;
+}
+@media (max-width: 1199px) {
+  .header {
+    padding-top: 10px;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1220px;
+  margin: auto;
+}
+@media (max-width: 1199px) {
+  .header__container {
+    justify-content: space-between;
+  }
+}
+.header__wrapper {
+  display: flex;
+}
+.header__img-step {
+  margin-right: 27px;
+}
+@media (max-width: 1199px) {
+  .header__img-step {
+    padding-left: 29px;
+    height: 45px;
+  }
+}
+.header__city {
+  color: #27c5dc;
+  background-color: #fff;
+  text-align: left;
+  font-family: "SFUI Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  display: block;
+  padding: 26px 118px 26px 30px;
+}
+@media (max-width: 1199px) {
+  .header__city {
+    background-color: transparent;
+    padding: 0;
+    font-size: 25px;
+    padding-right: 15px;
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu {
+    position: relative;
+  }
+}
+.menu__list {
+  list-style-type: none;
+  background-color: #f9f9f9;
+  box-shadow: -1px 5px 27px rgba(129, 129, 129, 0.15);
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .menu__list {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: calc(100vh - 58px);
+    overflow: auto;
+  }
+}
+.menu__btn {
+  display: none;
+  position: relative;
+  font-size: 20px;
+}
+@media (max-width: 1199px) {
+  .menu__btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 25px;
+    color: #27c5dc;
+    font-family: "SFUI Display";
+  }
+  .menu__btn + ul {
+    transition: 0.3s;
+  }
+  .menu__btn--close + ul {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menu__btn--open + ul {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.menu__item {
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .menu__item {
+    width: 200px;
+  }
+}
+@media (min-width: 1220px) {
+  .menu__item--with-sub {
+    position: relative;
+  }
+  .menu__item--with-sub:hover .sub-menu {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .menu__item--border-right {
+    padding-right: 40px;
+  }
+  .menu__item--border-right::before {
+    content: "";
+    display: inline-block;
+    border-right: 1px solid #252525;
+    box-shadow: -1px 5px 27px rgba(129, 129, 129, 0.15);
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+  }
+}
+.menu__link {
+  text-decoration: none;
+  display: block;
+  padding: 27px 15px 25px;
+  color: #252525;
+  font-family: "SFUI Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  transition: 0.3s;
+}
+.menu__link:hover {
+  background-color: #27c5dc;
+  color: #000;
+}
+@media (max-width: 1199px) {
+  .menu__link {
+    text-align: right;
+    padding: 5px 10px;
+  }
+}
+.menu__link--padding {
+  padding: 27px 57px 25px 39px;
+}
+@media (max-width: 1199px) {
+  .menu__link--padding {
+    padding: 5px 10px;
+    border-top: 1px solid #252525;
+  }
+}
+.menu__link--padding-left {
+  padding-left: 36px;
+}
+@media (max-width: 1199px) {
+  .menu__link--padding-left {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: block;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    width: 150px;
+    background: #f9f9f9;
+    padding: 5px 0;
+  }
+}
+.sub-menu__link {
+  color: #252525;
+  font-family: "SFUI Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  padding: 5px 7px;
+  transition: 0.3s;
+}
+@media (max-width: 1199px) {
+  .sub-menu__link {
+    padding-right: 25px;
+  }
+}
+.sub-menu__link:hover {
+  padding-right: 14px;
+}
+@media (max-width: 1199px) {
+  .sub-menu__link:hover {
+    padding-right: 35px;
+  }
+}
+
+.banner {
+  padding-top: 44px;
+  width: 100%;
+  background: url("../image/background_header.png") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 75px;
+}
+.banner__text {
+  padding: 135px 0 143px;
+}
+@media (max-width: 1199px) {
+  .banner__text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.banner__title {
+  color: #fff;
+  font-family: "SFUI Display Semibold";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  width: 50%;
+}
+@media screen and (max-width: 750px) {
+  .banner__title {
+    width: 100%;
+  }
+}
+.banner__subtitle {
+  color: #fff;
+  font-family: "SFUI Display Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+.benefits {
+  margin-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  perspective: 400px;
+  perspective-origin: -10% 100%;
+}
+.benefits__list {
+  height: auto;
+}
+@media screen and (max-width: 1130px) {
+  .benefits__list {
+    position: relative;
+    width: 100%;
+  }
+  .benefits__list::before, .benefits__list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+  }
+  .benefits__list::before {
+    background-image: url("../image/def_img.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: -2;
+  }
+  .benefits__list::after {
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+  }
+}
+.benefits__title {
+  color: #191919;
+  font-family: "SFUI Display Semibold";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 600px) {
+  .benefits__title {
+    font-size: 40px;
+  }
+}
+.benefits__title::after {
+  content: "Преимущества";
+  display: block;
+  color: #f9f9fa;
+  font-family: "SFUI Display";
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 1130px) {
+  .benefits__title::after {
+    width: 100%;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .benefits__title::after {
+    font-size: 60px;
+  }
+}
+.benefits__item {
+  color: #191919;
+  font-family: "SFUI Display Semibold";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 50%;
+  float: left;
+  position: relative;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 1130px) {
+  .benefits__item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .benefits__item {
+    margin-bottom: 5px;
+    line-height: normal;
+  }
+}
+.benefits__item::before {
+  display: block;
+  color: #fff;
+  font-family: "SFUI Display Heavy";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 1130px) {
+  .benefits__item::before {
+    position: static;
+    display: inline-block;
+    color: #5d5d5d;
+    margin-right: 10px;
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+.benefits__item:nth-child(0)::before {
+  content: "0";
+}
+.benefits__item:nth-child(1)::before {
+  content: "1";
+}
+.benefits__item:nth-child(2)::before {
+  content: "2";
+}
+.benefits__item:nth-child(3)::before {
+  content: "3";
+}
+.benefits__item:nth-child(4)::before {
+  content: "4";
+}
+.benefits__item:nth-child(5)::before {
+  content: "5";
+}
+.benefits__item:nth-child(6)::before {
+  content: "6";
+}
+.benefits__item:nth-child(7)::before {
+  content: "7";
+}
+.benefits__item:nth-child(8)::before {
+  content: "8";
+}
+.benefits__img {
+  background-image: url("../image/def_img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  width: 394px;
+  height: 724px;
+  background-size: cover;
+  transform: rotateY(3deg) rotateX(-2deg) rotateZ(-2deg) skewX(4deg) skewY(2deg);
+  transform-origin: center;
+}
+@media (max-width: 1130px) {
+  .benefits__img {
+    display: none;
+  }
+}
+.benefits__text {
+  width: 50%;
+}
+@media screen and (max-width: 1130px) {
+  .benefits__text {
+    width: 100%;
+  }
+}
+
+.child-section {
+  margin-bottom: 102px;
+}
+.child-section__title {
+  color: #191919;
+  font-family: "SFUI Display Semibold";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 65px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 29px;
+}
+@media (max-width: 1130px) {
+  .child-section__title {
+    font-size: 40px;
+  }
+}
+.child-section__title::after {
+  content: "Детские спецкурсы";
+  color: #D4D8DE;
+  font-family: "SFUI Display";
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 1130px) {
+  .child-section__title::after {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .child-section__title::after {
+    font-size: 40px;
+  }
+}
+.child-section__subtitle {
+  color: #191919;
+  font-family: "SFUI Display";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 81px;
+}
+.child-section__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 750px) {
+  .child-section__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.child-section__item {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 33%;
+  text-align: center;
+  perspective: 800px;
+}
+.child-section__item:hover .child-section__item-img {
+  transform: none;
+}
+@media screen and (max-width: 750px) {
+  .child-section__item {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+.child-section__item-title {
+  color: #191919;
+  font-family: "SFUI Display";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.child-section__item-text {
+  color: #191919;
+  font-family: "SFUI Display";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 64px;
+}
+.child-section__item-date {
+  box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
+  background-color: #fff;
+  display: inline-block;
+  padding: 11px 29px 9px 26px;
+  color: #fff;
+  font-family: "SFUI Display";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  margin-bottom: 10px;
+  transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
+  box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
+}
+.child-section__item-img {
+  height: 231px;
+  background-image: url("../image/school-reflect.png");
+  background-size: cover;
+  margin: 53px 38px 42px;
+  position: relative;
+  transition: 0.6s;
+  will-change: transform;
+  transform: rotateY(-28deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
+  box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
+}
+.child-section__item-img--revers {
+  transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
+  box-shadow: -3px 12px 21px rgba(39, 197, 220, 0.4);
+}
+.child-section__item-img::before, .child-section__item-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 1;
+}
+.child-section__item-img::before {
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent #fff transparent;
+  bottom: 0;
+  right: 0;
+}
+.child-section__item-img::after {
+  border-width: 20px 20px 0 0;
+  border-color: #fff transparent transparent transparent;
+  top: 0;
+  left: 0;
+}
+.child-section__description {
+  color: #252525;
+  font-family: "SFUI Display";
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+@media screen and (max-width: 750px) {
+  .child-section__description {
+    width: 90%;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.subscribe__title {
+  color: #252525;
+  font-family: "SFUI Display Semibold";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55px;
+  margin-bottom: 58px;
+}
+@media screen and (max-width: 750px) {
+  .subscribe__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+.subscribe__subtitle {
+  color: #252525;
+  font-family: "SFUI Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 62px;
+}
+@media screen and (max-width: 750px) {
+  .subscribe__subtitle {
+    width: 90%;
+    text-align: center;
+  }
+}
+.subscribe__enter-email {
+  color: #fff;
+  font-family: "SFUI Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  padding: 25px 223px;
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  margin-bottom: 40px;
+}
+.subscribe__button {
+  background-image: url("../image/button.png");
+  background-color: transparent;
+  color: #fff;
+  font-family: "SFUI Display Semibold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 55px;
+  padding: 5px 44px 5px 51px;
+  margin: auto;
+  margin-bottom: 83px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transform: rotateY(0) rotateX(0) rotateZ(-3deg) skewX(-8deg) skewY(2deg);
+}
+.subscribe__button:hover {
+  box-shadow: none;
+}
+.subscribe__networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subscribe__networks-item {
+  perspective: 200px;
+}
+.subscribe__networks-link {
+  transform: rotateX(-24deg);
+  padding: 11px 18px 14px 19px;
+  color: #fff;
+  background-color: #27c5dc;
+  box-shadow: 0 12px 21px rgba(46, 228, 255, 0.4);
+  text-align: center;
+  display: block;
+  height: 40px;
+  transform-origin: center;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.subscribe__networks-link:hover {
+  color: #fff;
+  background-color: #000;
+  transform: rotateX(29deg);
+}
+.subscribe__networks-link:focus {
+  background-color: #27c5dc;
+  color: #000;
+}
+
+.back {
+  display: block;
+  padding: 12px 13px 20px;
+  box-shadow: 0 12px 21px rgba(46, 228, 255, 0.4);
+  background-color: #D4D8DE;
+  position: fixed;
+  left: 90%;
+  top: 86%;
+  color: #000;
+  transform: rotateX(29deg);
+}
+.back:hover {
+  color: #fff;
+  background-color: #000;
+}
+.back:focus {
+  background-color: #27c5dc;
+  color: #000;
+}
+
+.footer {
+  height: 68px;
+  border-top: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  color: #252525;
+  font-family: "SFUI Display";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.1px;
+}
+
+/*# sourceMappingURL=main.css.map */
