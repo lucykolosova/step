@@ -408,7 +408,7 @@
     background-position: center;
     position: relative;
     z-index: 1;
-    width: 394px;
+    width: 418px;
     height: 724px;
     margin: auto;
     background-size: cover;
@@ -420,7 +420,7 @@
 
   }
   &__text {
-    width: 50%;
+    width: 63%;
     @media screen and (max-width: $containerWidth) {
       width: 100%;
     }
@@ -440,13 +440,12 @@
     font-size: 50px;
     font-weight: 400;
     line-height: 65px;
-    margin: auto;
     text-align: center;
     position: relative;
     margin-bottom: 29px;
     &::after {
       content: 'Детские спецкурсы';
-      color: $mischka;
+      color: $silverWhite;
       font-family: $basicFonts;
       font-size: 110px;
       font-weight: 700;
@@ -547,12 +546,11 @@
     transition: .6s;
     will-change: transform;
     transform: rotateY(-28deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
-    box-shadow: $basicShadow;
+    filter: drop-shadow(-3px 12px 21px rgba(39, 197, 220, 0.4));
     width: 80%;
     margin: 53px 30px 42px;
     &--revers{
       transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
-      box-shadow: $basicShadow;
     }
   }
   &__description {
@@ -659,10 +657,10 @@
     height: 40px;
     transform-origin: center;
     transition: .3s;
-    margin-left: 10px;
+    margin-left: 0 5px;
     &--padding{
       padding: 11px 18px 14px 19px;
-      margin-left: 0;
+
     }
     &:hover {
       color: $white;
