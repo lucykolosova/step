@@ -380,8 +380,8 @@
       line-height: 60px;
       text-transform: uppercase;
       position: absolute;
-      top: -8px;
-      left: 0;
+      top: -31px;
+      left: -12px;
       z-index: -1;
       @media screen and (max-width: $containerWidth) {
         position: static;
@@ -657,7 +657,7 @@
     height: 40px;
     transform-origin: center;
     transition: .3s;
-    margin-left: 0 5px;
+    margin: 0 5px;
     &--padding{
       padding: 11px 18px 14px 19px;
 
