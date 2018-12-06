@@ -330,6 +330,9 @@
     margin-bottom: 65px;
     @media screen and (max-width: 600px) {
       font-size: 40px;
+      width: 100%;
+      line-height: 40px;
+
     }
     &::after {
       content: 'Преимущества';
@@ -345,13 +348,13 @@
       left: 0;
       z-index: -1;
       @media screen and (max-width: $containerWidth) {
-      width: 100%;
-      font-size: 80px;
-    }
+        width: 100%;
+        font-size: 80px;
+      }
       @media screen and (max-width: 600px) {
         font-size: 60px;
       }
-  }
+    }
   }
   &__item {
     color: $basicColorText;
@@ -434,6 +437,8 @@
   &__title {
     @media(max-width: $containerWidth) {
       font-size: 40px;
+      width: 100%;
+      line-height: 40px;
     }
     color: $codGray;
     font-family: $basicFontsBold;
@@ -497,7 +502,7 @@
       }
     }
     @media screen and (max-width: 750px) {
-      width: 90%;
+      width: 100%;
       margin-bottom: 10px;
 
     }
@@ -512,8 +517,8 @@
     width: 70%;
     margin: 0 auto;
     margin-bottom: 18px;
-
   }
+
   &__item-text {
     color: $basicColorText;
     font-family: $basicFonts;
@@ -539,8 +544,8 @@
     transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
     box-shadow: $basicShadow;
   }
-  &__item-img{
-    height: 231px;
+  &__item-img {
+    height: auto;
     background-color: transparent;
     position: relative;
     transition: .6s;
@@ -549,7 +554,7 @@
     filter: drop-shadow(-3px 12px 21px rgba(39, 197, 220, 0.4));
     width: 80%;
     margin: 53px 30px 42px;
-    &--revers{
+    &--revers {
       transform: rotateY(21deg) rotateX(0deg) rotateZ(3deg) skewX(3deg) skewY(0deg);
     }
   }
@@ -564,7 +569,7 @@
     line-height: 30px;
     letter-spacing: 0.15px;
     @media screen and (max-width: 750px) {
-      width: 90%;
+      width: 100%;
     }
   }
 }
@@ -635,15 +640,16 @@
     cursor: pointer;
     position: relative;
     transform: rotateY(0) rotateX(0) rotateZ(-3deg) skewX(-8deg) skewY(2deg);
-    &:hover {box-shadow: none;
+    &:hover {
+      box-shadow: none;
     }
   }
   &__networks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
-  &__networks-item{
+  }
+  &__networks-item {
     perspective: 200px;
   }
   &__networks-link {
@@ -658,7 +664,7 @@
     transform-origin: center;
     transition: .3s;
     margin: 0 5px;
-    &--padding{
+    &--padding {
       padding: 11px 18px 14px 19px;
 
     }
@@ -673,7 +679,6 @@
     }
   }
 }
-
 
 .back {
   display: block;
@@ -694,7 +699,8 @@
     color: $black;
   }
 }
-.footer{
+
+.footer {
   @extend %container;
   height: 68px;
   border-top: 1px solid $white;
